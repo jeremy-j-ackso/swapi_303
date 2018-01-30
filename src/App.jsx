@@ -1,3 +1,5 @@
+/* eslint react/prefer-stateless-function: "off" */
+
 import React, { Component } from 'react';
 import logo from './logo.svg';
 import './App.css';
