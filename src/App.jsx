@@ -41,13 +41,40 @@ class App extends Component {
       return <div>Loading...</div>;
     }
     return (
-      <ul>
-        { items.map(item => (
-          <li key={item.name}>
-            {item.name} {item.rotation}
-          </li>
-        ))}
-      </ul>
+      <table>
+        <thead>
+          <tr>
+            <th>Planet Name</th>
+            <th>Rotation Period</th>
+            <th>Orbital Period</th>
+            <th>diameter</th>
+            <th>Climate</th>
+            <th>Gravity</th>
+            <th>Terrain</th>
+            <th>Surface Water</th>
+            <th>Population</th>
+            <th>Residents</th>
+            <th>Films</th>
+          </tr>
+        </thead>
+        {
+          items.map(item => (
+            <tr>
+              <th>{item.name}</th>
+              <th>{item.rotation_period}</th>
+              <th>{item.orbital_period}</th>
+              <th>{item.diameter}</th>
+              <th>{item.climate}</th>
+              <th>{item.gravity}</th>
+              <th>{item.terrain}</th>
+              <th>{item.surface_water}</th>
+              <th>{item.population}</th>
+              <th>{item.residents}</th>
+              <th>{item.films}</th>
+            </tr>
+          ))
+        }
+      </table>
     );
   }
 }
