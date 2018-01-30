@@ -1,3 +1,4 @@
+/* eslint react/jsx-filename-extension: "off" */
 /* global document */
 
 import React from 'react';
